@@ -4,6 +4,9 @@ const seasonSelect = document.querySelector("#seasonSelect");
 const mainPlayer = document.querySelector("#mainPlayer");
 const videoSource = document.querySelector("#mainPlayer source");
 
+const nextBtn = document.querySelector("#next-episode");
+const prevBtn = document.querySelector("#prev-episode");
+
 let interval;
 
 const countEpisodes = [8, 9, 8, 9, 8];
@@ -59,6 +62,10 @@ mainPlayer.addEventListener("timeupdate", () => {
         episode: +episodeSelect.value,
         time: mainPlayer.currentTime
     }));
+
+    if (mainPlayer.currentTime === mainPlayer.duration) {
+        nextEpisode();
+    }
 });
 
 
@@ -80,6 +87,35 @@ function updateVideo(season, episode) {
     mainPlayer.load();
 }
 
+function nextEpisode() {
+    let s = Number(seasonSelect.value);
+    let e = Number(episodeSelect.value);
+
+    let currentSeasonIndex = s - 1;
+    let totalEpisodesInSeason = countEpisodes[currentSeasonIndex];
+
+    if (e < totalEpisodesInSeason) {
+        e++;
+    } else if (s < countEpisodes.length) {
+        s++;
+        e = 1;
+
+        episodeSelect.replaceChildren(...createSelectList(countEpisodes[s - 1], "Серія"));
+    } else {
+        alert("Ви подивилися весь серіал!");
+        return;
+    }
+
+    seasonSelect.value = s;
+    episodeSelect.value = e;
+
+    isFirstLoad = false;
+    saveInfo.time = 0;
+
+    updateVideo(s, e);
+    mainPlayer.play();
+}
+
 episodeSelect.addEventListener("change", () => {
     updateVideo(seasonSelect.value, episodeSelect.value);
 });
@@ -87,4 +123,8 @@ episodeSelect.addEventListener("change", () => {
 seasonSelect.addEventListener("change", () => {
     updateVideo(seasonSelect.value, episodeSelect.value);
     episodeSelect.replaceChildren(...createSelectList(countEpisodes[+seasonSelect.value-1], "Епізод"));
+});
+
+nextBtn.addEventListener("click", () => {
+    nextEpisode();
 });
