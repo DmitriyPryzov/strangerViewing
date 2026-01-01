@@ -16,7 +16,7 @@ const links = {
     2: "https://nl03.werkecdn.me/s/FHn6jIB-kjnYXESEFfkSGNWEFBQUFBQUFBQUFBUk5HRXl3L29BbXpGZ1VVTT0.ulfARfVJjP9y-NZXKWmQBCSb4-29Z5HUbmT8Ug/Stranger.Things.lostfilm/",
     3: "https://nl107.cdnsqu.com/s/FHirhIDyMvFGKG_nFCquSRhUFBQUFBQUFBQUFBUk5HSEVndm9BbXpGZ1VVTT0.XA8Pup2gp_dXeff36CZ4WNX8aFwYDBNErnu4cg/Stranger.Things.lostfilm/",
     4: "https://nl03.werkecdn.me/s/FHn6jIB-kjnYXESEFfkSGNWEFBQUFBQUFBQUFBUk5HRXl3L29BbXpGZ1VVTT0.ulfARfVJjP9y-NZXKWmQBCSb4-29Z5HUbmT8Ug/Stranger.Things.lostfilm/",
-    5: "https://nl215.werkecdn.me/s/FHirhIDyMvFGKG_nFCquSRhUFBQUFBQUFBQUFBUk5HSEVndm9BbXpGZ1VVTT0.XA8Pup2gp_dXeff36CZ4WNX8aFwYDBNErnu4cg/Stranger.Things.lostfilm/"
+    5: "https://nl215.werkecdn.me/s/FHxceVTh5y87wzrUzy3jy2f0FBQUFBQUFBQUFBUk5FSUJRZm9BbXpGZ1VVTT0.QyUiZwzvz2P3QxowErajDTVS8C7nE1Z53uFCkw/Stranger.Things.lostfilm/"
 };
 
 function createSelectList(count, text) {
