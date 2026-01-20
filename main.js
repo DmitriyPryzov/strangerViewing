@@ -9,14 +9,11 @@ const prevBtn = document.querySelector("#prev-episode");
 
 let interval;
 
-const countEpisodes = [8, 9, 8, 9, 8];
+const countEpisodes = [9, 7];
 
 const links = {
-    1: "https://nl03.werkecdn.me/s/FHn6jIB-kjnYXESEFfkSGNWEFBQUFBQUFBQUFBUk5HRXl3L29BbXpGZ1VVTT0.ulfARfVJjP9y-NZXKWmQBCSb4-29Z5HUbmT8Ug/Stranger.Things.lostfilm/",
-    2: "https://nl03.werkecdn.me/s/FHn6jIB-kjnYXESEFfkSGNWEFBQUFBQUFBQUFBUk5HRXl3L29BbXpGZ1VVTT0.ulfARfVJjP9y-NZXKWmQBCSb4-29Z5HUbmT8Ug/Stranger.Things.lostfilm/",
-    3: "https://nl107.cdnsqu.com/s/FHirhIDyMvFGKG_nFCquSRhUFBQUFBQUFBQUFBUk5HSEVndm9BbXpGZ1VVTT0.XA8Pup2gp_dXeff36CZ4WNX8aFwYDBNErnu4cg/Stranger.Things.lostfilm/",
-    4: "https://nl03.werkecdn.me/s/FHn6jIB-kjnYXESEFfkSGNWEFBQUFBQUFBQUFBUk5HRXl3L29BbXpGZ1VVTT0.ulfARfVJjP9y-NZXKWmQBCSb4-29Z5HUbmT8Ug/Stranger.Things.lostfilm/",
-    5: "https://nl215.werkecdn.me/s/FH49B1f6G-sE3L21VnPPKks0FBQUFBQUFBQUFBUk5QSVR3L29BbXpGZ1VVTT0.4TIirO29ePG6M0BkR9v2tghss3yZ_4lh9bERfA/Stranger.Things.lostfilm/"
+    1: "https://nl107.cdnsqu.com/s/FHDEBcEdyj2e18qOX7eI3kI0FBQUFBQUFBQUFBUlZBQ2lndm9BbXpGZ1VVTT0.z6XcZH1HCjm8tqhkX01eLuVRLlrpleC8SGXKXw/The-Last-of-Us-2023-Dubl/",
+    2: "https://nl109.werkecdn.me/s/FHeqaF-epl4mJI0pOp2Te0uUFBQUFBQUFBQUFBUlZBRFNndm9BbXpGZ1VVTT0.myrA-zcqp862eC6NsiWxHg9ZQz8f6JBoEKyemg/The-Last-of-Us-2023-Dubl/",
 };
 
 function createSelectList(count, text) {
