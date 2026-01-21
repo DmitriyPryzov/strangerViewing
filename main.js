@@ -13,7 +13,7 @@ const countEpisodes = [9, 7];
 
 const links = {
     1: "https://nl107.cdnsqu.com/s/FHDEBcEdyj2e18qOX7eI3kI0FBQUFBQUFBQUFBUlZBQ2lndm9BbXpGZ1VVTT0.z6XcZH1HCjm8tqhkX01eLuVRLlrpleC8SGXKXw/The-Last-of-Us-2023-Dubl/",
-    2: "https://nl109.werkecdn.me/s/FHeqaF-epl4mJI0pOp2Te0uUFBQUFBQUFBQUFBUlZBRFNndm9BbXpGZ1VVTT0.myrA-zcqp862eC6NsiWxHg9ZQz8f6JBoEKyemg/The-Last-of-Us-2023-Dubl/",
+    2: "https://nl109.werkecdn.me/s/FH6lwVW9l8Io1QXrD-9OKZSkFBQUFBQUFBQUFBUlZMRGpBUG9BbXpGZ1VVTT0.pvwpor3Fc2dVeITZh6gHrmYo_5hYKMmu47-PzA/The-Last-of-Us-2023-Dubl/",
 };
 
 function createSelectList(count, text) {
